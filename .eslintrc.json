@@ -17,7 +17,6 @@
     },
     "plugins": ["@typescript-eslint"],
     "rules": {
-        "no-console": "off",
-        "no-unused-variable": false
+        "no-console": "off"
     }
 }
