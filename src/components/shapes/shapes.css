@@ -1,0 +1,6 @@
+.shapes {
+    margin: 1 rem;
+    border: 1px solid;
+    min-height: 200px;
+    min-width: 200px;
+}

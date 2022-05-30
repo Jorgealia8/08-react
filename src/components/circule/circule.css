@@ -1,0 +1,13 @@
+.circule__on {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.circule__off {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+}

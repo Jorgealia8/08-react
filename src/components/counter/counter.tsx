@@ -1,16 +1,16 @@
-import { SyntheticEvent } from "react";
+import { SyntheticEvent, useState } from "react";
 import "./counter.css";
-export function Counter() {
-    let n = 0;
+
+export function Counter({ initial }: { initial: number }) {
+    const [counter, setCounter] = useState(initial);
 
     function handlerClick(ev: SyntheticEvent, value: number) {
-        n = n + value;
-        console.log("click", ev, n);
+        setCounter((prev) => prev + value);
+        console.log("Click", ev, counter);
     }
-
     return (
         <>
-            <output>{n}</output>
+            <output>{counter}</output>
             <div className="buttons">
                 <button onClick={(ev) => handlerClick(ev, -1)}> - </button>
                 <button onClick={(ev) => handlerClick(ev, +1)}> + </button>

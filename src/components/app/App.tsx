@@ -3,6 +3,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "../header/header";
 import { Counter } from "../counter/counter";
+import { Circule } from "../circule/circule";
+import { Shapes } from "../shapes/shapes";
 
 function App() {
     return (
@@ -21,7 +23,22 @@ function App() {
                 >
                     Learn React
                 </a>
-                <Counter></Counter>
+                <Counter initial={10}></Counter>
+                <Counter initial={1}></Counter>
+                <div>
+                    <Circule></Circule>
+                </div>
+                <div>
+                    <Shapes>
+                        <Circule></Circule>
+                        <Circule></Circule>
+                    </Shapes>
+                </div>
+                <div>
+                    <Shapes>
+                        <Circule></Circule>
+                    </Shapes>
+                </div>
             </header>
         </div>
     );
